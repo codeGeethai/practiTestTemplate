@@ -1,5 +1,7 @@
 package com.example;
 
+import com.example.practitest.dataobjects.User;
+import com.example.practitest.integration.PractiTestClient;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -14,7 +16,7 @@ public class UserTest {
         Assertions.assertEquals("john.doe@example.com", user.getEmail());
 
         // Integrate with PractiTest to create test run and update its status
-        PractiTestIntegration practiTestIntegration = new PractiTestIntegration();
-        practiTestIntegration.createTestRun("testUserAttributes", "Passed");
+        PractiTestClient practiTestClient = new PractiTestClient();
+
     }
 }

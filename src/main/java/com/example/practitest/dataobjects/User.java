@@ -1,4 +1,4 @@
-package com.example;
+package com.example.practitest.dataobjects;
 
 public class User {
 
